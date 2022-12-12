@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Css files\navigation.css">
+    <link rel="stylesheet" href="Css files\form.css">
+</head>
+<body>
+
+
+    <video autoplay loop muted plays-inline class = "background_video">
+        <source src="Rain Overlay Transparent Video.mp4" type="video/mp4">
+    </video> 
+
+    <header>
+        <div class = "container">
+            <nav>
+                <h1 class = "brand"><a href="home.html">Hox<span>3</span>n Gaming</a></h1>
+                <ul>
+                    <li> <a href="home.html">Home</a></li>
+                    <li> <a href="Catalog.html">Catalaog</a></li>
+                    <li> <a href="AboutUs.html">About</a></li>
+                    <li> <a href="locations.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <h1>Review Form</h1>
+
+        <div class="form">
+            <div class="halfSplit left">
+
+                <label for="fname">First name:</label>
+                <input type="text" class= "textbox" id="fname" name="fname">
+                <hr>
+
+                <label for="lname">Last name:</label>
+                <input type="text" class= "textbox" id="lname" name="lname">
+                <hr>
+
+                <label for="lname">Email:</label>
+                <input type="text" class= "textbox" id="email" name="email">
+                <hr>
+
+                <label for="lname"><p>How would you rate your experience in this website ?</p></label>
+
+                    <div class="radioOption">
+                        <input type="radio" id="Poor" name="experience" value="Poor">
+                        <label for="Poor">Poor</label><br>
+                    </div>
+
+                    <div class="radioOption">
+                        <input type="radio" id="Satisfactory" name="experience" value="Satisfactory">
+                        <label for="Satisfactory">Satisfactory</label><br>
+                    </div>
+
+                    <div class="radioOption">
+                        <input type="radio" id="Good" name="experience" value="Good">
+                        <label for="Good">Good</label><br>
+                    </div>
+
+                    <div class="radioOption">
+                        <input type="radio" id="Exellent" name="experience" value="Exellent">
+                        <label for="Exellent">Exellent</label><br>
+                    </div>
+                
+
+                
+
+            </div>
+
+            <div class="halfSplit right">
+                <div class="slider">
+                    <label for="vol">How would you rate your experience form 1 to 100 ?</label>
+                    <input type="range" id="val" name="val" min="0" max="100">
+                </div>
+
+                <hr>
+
+                <div class="message">
+                    <p><label for="message">Would you like to leave a message for the team?:</label></p>
+                    <textarea id="message" name="message" rows="5" cols="40"></textarea>
+                    <hr>
+                </div>
+
+                <input type="button" value="Submit" id="button">
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="JS files\form.js"></script>
+</body>
+</html>

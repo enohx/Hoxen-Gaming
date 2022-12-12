@@ -1,0 +1,318 @@
+main{
+    padding: 4vh;
+    width: 100%;
+    height: 400vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-auto-rows: minmax(300px, 300px);
+    grid-gap: 2em;
+}
+
+
+.featured{
+    grid-column: 1/6;
+    border-radius: 50px;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 3vh;
+    font-size: larger;
+}
+
+.first {
+    color: #333;
+    animation: pulsate1 1.5s infinite alternate;
+}
+
+.second{
+    color: #333;
+    animation: pulsate2 1.5s infinite alternate;
+}
+
+.third{
+    color: #333;
+    animation: pulsate3 1.5s infinite alternate;
+}
+
+.featured .featuredGallery{
+    margin:2vh;
+    padding: 1vh;
+    height: 80%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.featured .featuredGallery .featuredGame{
+    height: 95%;
+    width: 23%;
+    align-items: center;
+    padding: 1.5vh;
+}
+
+.featured .featuredGallery .featuredGame img{
+    margin-top: .75vh;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.featured .featuredGallery .featuredGame:hover{
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #7c0202,
+              0 0 0.8rem #7c0202,
+              0 0 2.8rem #7c0202,
+              inset 0 0 1.3rem #7c0202;
+}
+
+.gameCard{
+
+    border-radius: 30px;
+    margin-bottom: 5vh;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: center;
+}
+
+.gameCard h2{
+    text-align: center;
+}
+
+.gameCard .gameImage{
+    margin: 2px;
+    height: 90%;
+    width: 87%;
+    border-radius: 27px;
+    align-items: center;
+}
+
+.gameCard .gameImage img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 27px;
+}
+
+.gameCard:hover{
+    transform: scale(1.1);
+
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #f7ffc3,
+              0 0 0.8rem #f7ffc3,
+              0 0 2.8rem #f7ffc3,
+              inset 0 0 1.3rem #f7ffc3;
+
+    color: #fff;
+
+}
+
+.navigations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+    z-index: 999;
+
+}
+
+.navigations .arrow{
+    height: 10%;
+    width: 10%;
+    margin: 3vh;
+}
+
+.Arrow{
+    border: solid crimson;
+    border-width: 0 20px 20px 0;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 8vh;
+  }
+
+.Arrow:hover{
+    cursor: pointer;
+    border: double silver;
+    border-width: 0 20px 20px 0;
+    display: inline-block;
+
+}
+  
+  .Up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+  footer{
+    width: 100%;
+    height: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+    font-size: 13px;
+    text-align: end;
+    text-align: center;
+    word-spacing: 4px;
+    color: crimson;
+    opacity: 30%;
+}
+
+@keyframes pulsate1 {
+      
+    100% {
+  
+        box-shadow:
+        0 0 1px #fff,
+        0 0 2px #fff,
+        0 0 3px #fff,
+        0 0 6px #841818,
+        0 0 7px #841818,
+        0 0 8px #841818,
+        0 0 9px #841818,
+        0 0 10px #841818;
+
+        text-shadow:
+        0 0 1px #fff,
+        0 0 2px #fff,
+        0 0 3px #fff,
+        0 0 4px #841818,
+        0 0 6px #841818,
+        0 0 9px #841818,
+        0 0 12px #841818,
+        0 0 15px #841818;
+    
+    }
+    
+    0% {
+  
+      box-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 5px #841818,
+      0 0 18px #841818,
+      0 0 20px #841818,
+      0 0 25px #841818,
+      0 0 30px #841818;
+
+      text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 5px #841818,
+      0 0 18px #841818,
+      0 0 20px #841818,
+      0 0 25px #841818,
+      0 0 30px #841818;
+  
+  }}
+
+  @keyframes pulsate2 {
+      
+    100% {
+  
+        box-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 7px #fff,
+        0 0 15px #c24d0a,
+        0 0 30px #c24d0a,
+        0 0 35px #c24d0a,
+        0 0 44px #c24d0a,
+        0 0 55px #c24d0a;
+
+        text-shadow:
+        0 0 1px #fff,
+        0 0 2px #fff,
+        0 0 3px #fff,
+        0 0 4px #c24d0a,
+        0 0 6px #c24d0a,
+        0 0 9px #c24d0a,
+        0 0 12px #c24d0a,
+        0 0 15px #c24d0a;
+    
+    }
+    
+    0% {
+  
+      box-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 5px #c24d0a,
+      0 0 18px #c24d0a,
+      0 0 20px #c24d0a,
+      0 0 25px #c24d0a,
+      0 0 30px #c24d0a;
+
+      text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 5px #c24d0a,
+      0 0 18px #c24d0a,
+      0 0 20px #c24d0a,
+      0 0 25px #c24d0a,
+      0 0 30px #c24d0a;
+  
+  }}
+
+
+  @keyframes pulsate3 {
+      
+    100% {
+  
+        box-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 7px #fff,
+        0 0 15px #320303,
+        0 0 30px #320303,
+        0 0 35px #320303,
+        0 0 44px #320303,
+        0 0 55px #320303;
+
+        text-shadow:
+        0 0 1px #fff,
+        0 0 2px #fff,
+        0 0 3px #fff,
+        0 0 4px #320303,
+        0 0 6px #320303,
+        0 0 9px #320303,
+        0 0 12px #320303,
+        0 0 15px #320303;
+    
+    }
+    
+    0% {
+  
+      box-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 5px #320303,
+      0 0 18px #320303,
+      0 0 20px #320303,
+      0 0 25px #320303,
+      0 0 30px #320303;
+
+      text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 5px #320303,
+      0 0 18px #320303,
+      0 0 20px #320303,
+      0 0 25px #320303,
+      0 0 30px #320303;
+  
+  }}

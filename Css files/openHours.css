@@ -1,0 +1,145 @@
+.parent-element-to-video {
+    overflow: hidden;
+}
+video {
+    height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+    position: absolute;
+    z-index: -1;
+}
+
+main{
+    padding-left: 2vh;
+    padding-right: 10vh;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    align-items: center;
+    color: #fff;
+
+}
+
+h1{
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+    font-family: cursive;
+    padding: 5,0;
+    margin-bottom: 4vh;
+    animation: neonText 1.5s infinite alternate;
+    
+}
+
+table{
+    border-collapse: collapse;
+    width: 120vh;
+    height: fit-content;
+    border: 1px solid crimson;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    animation: pulsate 1.5s infinite alternate;
+    font-size: larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-weight: 600;
+    
+}
+
+tr{
+    transition: all .2s ease-in;
+    cursor: pointer;
+    height: 8vh;
+}
+
+tr:hover{
+    color: black;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    color: red;
+    -webkit-text-stroke: 1px crimson;
+    font-size: 17px;
+}
+
+th,td{
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    width: 35vh;
+}
+
+
+th,tr :hover{
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #ff3838,
+              0 0 0.8rem #ff3838,
+              0 0 2.8rem #ff3838,
+              inset 0 0 1.3rem #ff3838;
+}
+
+#header{
+    background-color: #924040;
+    color: black;
+    -webkit-text-stroke: 1px #222;
+    font-size: 17px;
+}
+
+@keyframes pulsate {
+      
+    100% {
+  
+        box-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 7px #fff,
+        0 0 15px #841818,
+        0 0 30px #841818,
+        0 0 35px #841818,
+        0 0 44px #841818,
+        0 0 55px #841818;
+    
+    }
+    
+    0% {
+  
+      box-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 5px #c71548,
+      0 0 18px #c71548,
+      0 0 20px #c71548,
+      0 0 25px #c71548,
+      0 0 30px #c71548;
+  
+  }}
+  
+  @keyframes neonText {
+      
+    100% {
+  
+        text-shadow:
+        0 0 1px #fff,
+        0 0 3px #fff,
+        0 0 5px #fff,
+        0 0 10px #c71548,
+        0 0 15px #c71548,
+        0 0 20px #c71548;
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 5px #c71548,
+      0 0 8px #c71548,
+      0 0 12px #c71548;
+  
+  }}
+

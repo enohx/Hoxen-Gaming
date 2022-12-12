@@ -1,0 +1,134 @@
+.parent-element-to-video {
+    overflow: hidden;
+}
+video {
+    height: 100%;
+    width: 177.77777778vh; 
+    min-width: 100%;
+    min-height: 56.25vw; 
+    position: absolute;
+    z-index: -1;
+}
+
+
+main{
+    margin: 0;
+    width: 100%;
+    height: 82vh;
+    display: flex;
+    justify-content: first baseline;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+.review{
+    height: 20vh;
+    width: 70%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 1vh;
+    
+}
+
+.review:hover{
+    transform: scale(1.1);
+}
+
+.rev2{
+    margin-left: 40vh;
+    flex-direction: row-reverse;
+}
+
+.rightSide{
+    height: 90%;
+    width: 10%;
+    background-color:black;
+    padding: .5vh;
+   border-radius: 9%;
+   z-index: 2;
+}
+
+.rightSide img{
+    margin-left: .25vh;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 5%;
+}
+
+.leftSide{
+    height: 80%;
+    width: 80%;
+    background-color: black;
+    border-radius:20px;
+    padding: 1vhs;
+    position: relative;
+    right: 10%;
+    
+}
+
+.rev2 .leftSide{
+    position: relative;
+    left:10%;
+    
+}
+
+.textContainer{
+    height: 100%;
+    width: 95%;
+    border-radius: 18px;
+    padding: 1vh;
+    padding-left: 15%;
+    padding-right: 10%;
+    line-height: 1.2;
+    text-align: center;
+    
+    animation: pulsate 1.5s infinite alternate;
+    color: #fff;
+    -webkit-text-stroke: 0.5px crimson;
+    font-size: 12px;   
+    font-weight: bolder; 
+}
+
+.textContainer p{
+    margin-top: 1vh;
+}
+
+.rev2 .leftSide .textContainer{
+    padding-left: 10%;
+    padding-right: 15%;
+}
+
+@keyframes pulsate {
+      
+    100% {
+  
+        box-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 7px #fff,
+        0 0 15px #c71548,
+        0 0 30px #c71548,
+        0 0 35px #c71548,
+        0 0 44px #c71548,
+        0 0 55px #c71548;
+    
+    }
+    
+    0% {
+  
+      box-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 5px #c71548,
+      0 0 18px #c71548,
+      0 0 20px #c71548,
+      0 0 25px #c71548,
+      0 0 30px #c71548;
+  
+  }}
