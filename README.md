@@ -1,6 +1,5 @@
 # Hoxen-Gaming
-Introduction
-The aim of this project was to demonstrate the skills learned throughout the semester through the development of a website. This particular project aims at the development of the online version of a video game store through which the users can purchase the offered games. This project displays everything that a video game enthusiast would need in a routine purchase of a particular game. 
+This particular project aims at the development of the online version of a video game store through which the users can purchase the offered games. This project displays everything that a video game enthusiast would need in a routine purchase of a particular game. 
 Work philosophy
 The first step into developing this project was surfing the web and various game stores applications  for inspiration. The following phase required planning of the flow of the website (which link redirects where, the best arrangement for the elements to be displayed etc). During this phase various decisions were made, such as: the color scheme for the website and the focus on animations. 
 A Map to “Hoxen Gaming”
@@ -21,6 +20,6 @@ Featured games (on the right side of the home page): Each of these windows sends
 In the user needs to go back to the main page they can click on home option in the top navigation bar or in the “Hoxen gaming” logo in the top left corner of the screen
 
 Suggestion for Development
-The website is ofcourse in its infancy and this means that there is a lot of space for improvement. Technical-wise the website can introduce more interaction with the user in every one of its sectors as opposed to interaction in only some of them.
+The website is ofcourse in its infancy and this means that there is a lot of space for improvement. Technical-wise this website serves mostly as a frame, and does not offer much functionality to the user, though it is still usable for advertising purposes.
 Behind the scenes the website can be connected with various databases to hold user reviews, or user orders etc.
 On the practical side the website can use more games, as due to time limitations this project was limited to featuring only 5 games without providing much information on the others.
